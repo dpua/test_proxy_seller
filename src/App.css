@@ -1,0 +1,68 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Стилі для кореневого додатку */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Стилі для списку користувачів */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стилі для SearchBar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Стилі для постів та альбомів */
+.posts, .albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post, .album {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Мобільний вигляд */
+@media (max-width: 768px) {
+  .post, .album {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .post, .album {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
